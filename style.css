@@ -7,12 +7,20 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+
+a {
+  color: black !important;
+}
+
 .logo{
   width: 200px;
 }
 
 .container {
   padding: 20px;
+  width: 50%;
+  max-height: 100%;
+  overflow: scroll;
 }
 
 .description {
@@ -32,8 +40,48 @@ body {
   text-align: center;
 }
 
+.exhibit-item {
+  position: relative;
+}
+
+.exhibit-title {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding-top: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.exhibit-title a{ 
+  color: black;
+}
+
+.exhibit-title span:first-of-type {
+  width: 250px;
+}
+
+.exhibit-title img {
+  width: 200px;
+  object-fit: contain;
+}
+
+.work-title{
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.art-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.art-description {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
 .logo-container {
-  position: absolute;
   top: 10px;
   right: 20px;
   display: flex;
@@ -117,4 +165,17 @@ body {
   font-size: 1rem;
   color: #d3d3f4;
   text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1100px) {
+  body {
+    flex-direction: column;
+    overflow: auto;
+  }
+  .container {
+    width: 100%;
+    max-height: fit-content;   
+    overflow: auto;
+  }
 }
