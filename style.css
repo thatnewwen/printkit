@@ -13,7 +13,7 @@ a {
 }
 
 .logo{
-  width: 200px;
+  width: 150px;
 }
 
 .container {
@@ -26,6 +26,27 @@ a {
 .description {
   text-align: justify;
   margin: 20px 0;
+}
+
+.event-photo-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-photo-container img {
+  max-height: 150px;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.event-item .description {
+  font-size: 10px;
+  margin: 20px 0;
+}
+
+.lead {
+  font-size: 17px;
 }
 
 .container a{
